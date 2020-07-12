@@ -1,4 +1,3 @@
-require 'pry'
 
 require_relative './part_1_solution.rb'
 

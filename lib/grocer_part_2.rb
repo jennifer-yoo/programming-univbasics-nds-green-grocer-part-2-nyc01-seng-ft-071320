@@ -42,8 +42,14 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  # Consult README for inputs and outputs
-  #
+  consolidated_cart = consolidate_cart(cart)
+  coupon_cart = apply_coupons(consolidated_cart, coupons)
+  final_cart = apply_clearance(coupon_cart)
+
+  final_cart.each do |item_info|
+    item_info.each do |item_data|
+    end
+  end
   # This method should call
   # * consolidate_cart
   # * apply_coupons

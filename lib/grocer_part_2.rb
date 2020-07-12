@@ -3,14 +3,10 @@ require 'pry'
 require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
-  new_array = []
+counter = 0
 
-  cart.each do |item_list|
-    item_list.each do |item_info|
-      binding.pry
-
-    end
-  end
+while counter < coupons.length
+  coupons[]
 end
 
 def apply_clearance(cart)

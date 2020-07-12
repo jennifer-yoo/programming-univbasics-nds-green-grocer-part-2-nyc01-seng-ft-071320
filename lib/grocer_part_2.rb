@@ -48,6 +48,7 @@ def checkout(cart, coupons)
 
   final_cart.each do |item_info|
     item_info.each do |item_data|
+      binding.pry
     end
   end
   # This method should call
